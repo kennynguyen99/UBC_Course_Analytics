@@ -1,0 +1,16 @@
+{
+  "title": "Invalid key in MCOMPARISON",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses": 82
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_avg", "courses_title"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

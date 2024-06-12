@@ -1,0 +1,21 @@
+{
+  "title": "Multiple keys in negation",
+  "query": {
+    "WHERE": {
+      "NOT": {
+        "GT": {
+          "courses_avg": 2
+        },
+        "LT": {
+          "courses_avg": 4
+        }
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_title", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

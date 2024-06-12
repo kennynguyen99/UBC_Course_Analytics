@@ -1,0 +1,32 @@
+{
+  "title": "Basic negation with an OR - less than or eq 2",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+          "NOT": {
+            "GT": {
+              "courses_avg": 2
+            }
+          }
+        },
+        {
+          "EQ": {
+            "courses_avg": 2
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_title", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": true,
+  "result": [
+    { "courses_title": "in land food com", "courses_avg": 0 },
+    { "courses_title": "in land food com", "courses_avg": 0 },
+    { "courses_title": "forest ecology", "courses_avg": 0 },
+    { "courses_title": "prpty,ident&uses", "courses_avg": 1 }
+  ]
+}

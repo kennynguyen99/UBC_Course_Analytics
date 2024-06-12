@@ -1,0 +1,27 @@
+{
+  "title": "Triple negation - less than 2",
+  "query": {
+    "WHERE": {
+      "NOT": {
+        "NOT": {
+          "NOT": {
+            "GT": {
+              "courses_avg": 2
+            }
+          }
+        }
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_title", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": true,
+  "result": [
+    { "courses_title": "in land food com", "courses_avg": 0 },
+    { "courses_title": "in land food com", "courses_avg": 0 },
+    { "courses_title": "forest ecology", "courses_avg": 0 },
+    { "courses_title": "prpty,ident&uses", "courses_avg": 1 }
+  ]
+}

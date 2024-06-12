@@ -1,0 +1,16 @@
+{
+  "title": "Invalid SKEY type - should be string but given number",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "courses_title": 0
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_dept", "courses_title", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

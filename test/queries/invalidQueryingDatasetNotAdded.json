@@ -1,0 +1,16 @@
+{
+  "title": "Querying a dataset that's not added yet",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "coursesSmall_instructor": "bendickson, dennis"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["coursesSmall_dept", "coursesSmall_avg"],
+      "ORDER": "coursesSmall_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

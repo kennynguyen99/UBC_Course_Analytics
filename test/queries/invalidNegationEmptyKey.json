@@ -1,0 +1,14 @@
+{
+  "title": "Empty negation",
+  "query": {
+    "WHERE": {
+      "NOT": {}
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_title", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

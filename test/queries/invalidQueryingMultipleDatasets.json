@@ -1,0 +1,16 @@
+{
+  "title": "Invalid querying multiple datasets",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "coursesSmall_instructor": "bendickson, dennis"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_dept", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

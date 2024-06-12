@@ -1,0 +1,85 @@
+{
+  "title": "Very complex (OR, AND, GT, IS, EQ, NOT)",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "GT": {
+                "courses_avg": 90
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "*aps*"
+              }
+            }
+          ]
+        },
+        {
+          "EQ": {
+            "courses_avg": 96
+          }
+        },
+        {
+          "NOT": {
+            "GT": {
+              "courses_avg": 4
+            }
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_dept", "courses_id", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": true,
+  "result": [
+    { "courses_dept": "lfs", "courses_id": "100", "courses_avg": 0 },
+    { "courses_dept": "lfs", "courses_id": "100", "courses_avg": 0 },
+    { "courses_dept": "frst", "courses_id": "202", "courses_avg": 0 },
+    { "courses_dept": "wood", "courses_id": "475", "courses_avg": 1 },
+    { "courses_dept": "busi", "courses_id": "330", "courses_avg": 4 },
+    { "courses_dept": "busi", "courses_id": "330", "courses_avg": 4 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 90.2 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 90.22 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 90.29 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 90.33 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 90.47 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 90.7 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 90.71 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 91 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 91.29 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 91.43 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 91.81 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 92.24 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 92.59 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 92.74 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 93 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 94.1 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 94.17 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 94.94 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 95.05 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 95.94 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 95.95 },
+    { "courses_dept": "psyc", "courses_id": "549", "courses_avg": 96 },
+    { "courses_dept": "psyc", "courses_id": "501", "courses_avg": 96 },
+    { "courses_dept": "psyc", "courses_id": "501", "courses_avg": 96 },
+    { "courses_dept": "phil", "courses_id": "120", "courses_avg": 96 },
+    { "courses_dept": "pcth", "courses_id": "549", "courses_avg": 96 },
+    { "courses_dept": "kin", "courses_id": "499", "courses_avg": 96 },
+    { "courses_dept": "epse", "courses_id": "528", "courses_avg": 96 },
+    { "courses_dept": "epse", "courses_id": "303", "courses_avg": 96 },
+    { "courses_dept": "epse", "courses_id": "303", "courses_avg": 96 },
+    { "courses_dept": "crwr", "courses_id": "599", "courses_avg": 96 },
+    { "courses_dept": "crwr", "courses_id": "599", "courses_avg": 96 },
+    { "courses_dept": "crwr", "courses_id": "599", "courses_avg": 96 },
+    { "courses_dept": "crwr", "courses_id": "599", "courses_avg": 96 },
+    { "courses_dept": "crwr", "courses_id": "599", "courses_avg": 96 },
+    { "courses_dept": "cnps", "courses_id": "584", "courses_avg": 96 },
+    { "courses_dept": "apsc", "courses_id": "279", "courses_avg": 96 }
+  ]
+}

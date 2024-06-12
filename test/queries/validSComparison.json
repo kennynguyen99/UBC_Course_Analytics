@@ -1,0 +1,94 @@
+{
+  "title": "SCOMPARISON search by instructor",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "courses_instructor": "nicholl, tessa"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg",
+        "courses_instructor",
+        "courses_title",
+        "courses_pass"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": true,
+  "result": [
+    {
+      "courses_avg": 85.37,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 126
+    },
+    {
+      "courses_avg": 87.26,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 94
+    },
+    {
+      "courses_avg": 87.58,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 89
+    },
+    {
+      "courses_avg": 87.87,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 95
+    },
+    {
+      "courses_avg": 88.09,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 43
+    },
+    {
+      "courses_avg": 88.47,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 103
+    },
+    {
+      "courses_avg": 88.85,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 53
+    },
+    {
+      "courses_avg": 88.88,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 96
+    },
+    {
+      "courses_avg": 89.49,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 55
+    },
+    {
+      "courses_avg": 90.02,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 82
+    },
+    {
+      "courses_avg": 90.55,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 53
+    },
+    {
+      "courses_avg": 91.02,
+      "courses_instructor": "nicholl, tessa",
+      "courses_title": "cs phar sci iv",
+      "courses_pass": 46
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Invalid column key type",
+  "query": {
+    "WHERE": {
+      "NOT": {
+        "NOT": {
+          "GT": {
+            "courses_avg": 99
+          }
+        }
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [{ "courses_avg": 92 }],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

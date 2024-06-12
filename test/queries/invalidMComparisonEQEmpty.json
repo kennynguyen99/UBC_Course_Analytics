@@ -1,0 +1,14 @@
+{
+  "title": "Invalid MCOMPARISON empty",
+  "query": {
+    "WHERE": {
+      "EQ": {}
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_dept", "courses_title", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

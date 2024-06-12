@@ -1,0 +1,25 @@
+{
+  "title": "Valid range query but grade out of bounds - returns []",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+          "GT": {
+            "courses_avg": 100
+          }
+        },
+        {
+          "LT": {
+            "courses_avg": 0
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_dept", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": true,
+  "result": []
+}

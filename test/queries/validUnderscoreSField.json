@@ -1,0 +1,16 @@
+{
+  "title": "Underscore in course title",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "courses_title": "*_*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_dept", "courses_title", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": true,
+  "result": []
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Invalid because AND is an obj instead of an array",
+  "query": {
+    "WHERE": {
+      "AND": {}
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_title", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

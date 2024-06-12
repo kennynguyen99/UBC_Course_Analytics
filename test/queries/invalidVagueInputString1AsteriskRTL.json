@@ -1,0 +1,15 @@
+{
+  "title": "1 Asterisk - result too large",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "courses_title": "*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_dept", "courses_title", "courses_avg"]
+    }
+  },
+  "isQueryValid": false,
+  "result": "ResultTooLargeError"
+}

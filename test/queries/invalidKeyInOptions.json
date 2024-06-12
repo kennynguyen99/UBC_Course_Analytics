@@ -1,0 +1,17 @@
+{
+  "title": "Invalid key in OPTIONS",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "courses_title": "arch*"
+      }
+    },
+    "OPTIONS": {
+      "WHERE": {},
+      "COLUMNS": ["courses_dept", "courses_title", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

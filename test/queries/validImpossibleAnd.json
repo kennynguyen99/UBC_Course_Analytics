@@ -1,0 +1,27 @@
+{
+  "title": "Impossible AND but still valid",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "EQ": {
+            "courses_avg": 97
+          }
+        },
+        {
+          "NOT": {
+            "EQ": {
+              "courses_avg": 97
+            }
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_title", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": true,
+  "result": []
+}

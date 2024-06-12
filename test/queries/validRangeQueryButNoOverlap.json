@@ -1,0 +1,25 @@
+{
+  "title": "Range query valid but no overlap so empty",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "courses_avg": 95
+          }
+        },
+        {
+          "LT": {
+            "courses_avg": 94
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": ["courses_dept", "courses_avg"],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": true,
+  "result": []
+}
